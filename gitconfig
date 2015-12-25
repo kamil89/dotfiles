@@ -1,0 +1,19 @@
+[user]
+  name = Kamil Paszkowski
+  email = kamil.paszkowski@netguru.pl
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = true
+[alias]
+  st = status -sb
+  lg = log --graph --decorate --pretty=oneline --abbrev-commit
+  ds = diff --staged
+  co = checkout
+[core]
+  editor = vim
+[branch]
+  autosetuprebase = always
+[push]
+  default = matching
