@@ -45,15 +45,14 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails)
+plugins=(git rails ruby fasd)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export GOPATH="/Users/kamilpaszkowski/go"
+export GOPATH="$HOME/go"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/opt/go/libexec/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-PATH="/usr/local/sbin:$PATH"
 
 eval "$(rbenv init -)"
 # You may need to manually set your language environment
@@ -80,7 +79,7 @@ export EDITOR='vim'
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-alias an='annotate -e tests,fixtures,factories'
-alias be='bundle exec'
-alias gu='gsta && gl && gstp'
-alias fixcm='sudo killall VDCAssistant'
+alias an="annotate --exclude tests,fixtures,factories,serializers"
+alias be="bundle exec"
+alias gu="gsta && gl && gstp"
+alias fixcm="sudo killall VDCAssistant"
