@@ -83,3 +83,7 @@ alias an="annotate --exclude tests,fixtures,factories,serializers"
 alias be="bundle exec"
 alias gu="gsta && gl && gstp"
 alias fixcm="sudo killall VDCAssistant"
+alias plen="trans pl:en"
+alias enpl="trans en:pl"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
