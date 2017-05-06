@@ -50,8 +50,7 @@ plugins=(git rails ruby fasd)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export GOPATH="$HOME/go"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/opt/go/libexec/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:`yarn global bin`"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 eval "$(rbenv init -)"
