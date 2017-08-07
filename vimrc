@@ -44,7 +44,6 @@ set splitright
 let base16colorspace=256
 syntax enable
 set background=dark
-colorscheme base16-default
 
 " Move lines
 " Insert mode
